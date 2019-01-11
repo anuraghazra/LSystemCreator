@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>L-System Creator</title>
+  <script src="https://anuraghazra.github.io/Candy.js/dist/Candy.build.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.3/dat.gui.min.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="info">
+      | Click and drag to pan the canvas.
+      | Scroll to zoomIn and zoomOut
+      | Click 'generate' button to make pattern
+      | Use 'L-System Creator' to make your own LSystems
+      | After Parsing Your LSystem hit 'generate'
+    </div>
+
+    <div class="ui-container">
+      <div class="create">
+        <h4>L-System Creator</h4>
+        <ul>
+          <li>F/G = forward by length</li>
+          <li>+ = rotate by angle</li>
+          <li>- = -rotate by angle</li>
+          <li>[ = save state</li>
+          <li>] = restore state</li>
+        </ul>
+        <div class="ui">
+          <label class="input-container">
+            <p>name</p>
+            <input spellcheck="false" id="name" placeholder="pattern name" value="name" />
+          </label>
+          <label class="input-container">
+            <p>axiom</p>
+            <input spellcheck="false" id="start" placeholder="axiom" value="F" />
+          </label>
+          <label class="input-container">
+            <p>angle</p>
+            <input id="angle" placeholder="angle" value="60" />
+          </label>
+          <label class="input-container">
+            <p>length</p>
+            <input id="length" placeholder="length" value="20" />
+          </label>
+          <button title="add new rule" id="addrule">+</button>
+        </div>
+        <div id="rules"></div>
+
+        <div class="btngroup">
+          <button class="btn-normal" id="parsesystem">Parse L-System</button>
+          <button class="btn-normal" id="savesystem" title="save this LSystem">Save L-System</button>
+          <button class="btn-normal" id="loadsystem" title="load selected LSystem">Load Selected L-System</button>
+        </div>
+      </div>
+      
+      <div class="help">
+        <ul>
+          <li>After parsing L-System Hit generate</li>
+          <li>Hit save to save the Lsystem in localStorage</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./js/LSystems.js"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
