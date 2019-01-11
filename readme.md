@@ -1,5 +1,7 @@
 # L-System Creator
 
+Try out The [Demo](https://anuraghazra.github.io/LSystemCreator/)
+
 L-System Creator made with javascript.
 
 You can create your own L-Systems and try fun stuff with it.
@@ -20,6 +22,9 @@ But, i also found some interesting ones
 * Load predefined Settings
 * Create your own L-System (go nuts, considering performance)
 
+Inspired by [Coding Challenge #16: Fractal Trees - L-System](https://youtu.be/E1B4UoSQMFw)
 
+--------
+author : hazru.anurag@gmail.com
 
-[Coding Challenge #16: Fractal Trees - L-System](https://youtu.be/E1B4UoSQMFw)
+Made with :heart: and Javascript
